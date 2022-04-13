@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript"> 
+
+/*
+$(selector).animate({params},speed,callback);
+
+params->defines the css properties to be animated
+speed-> Specifies duration of the effect.
+It takes values slow,fast or miliseconds
+callback-> It is a function to be executed after the animation completes
+
+*/
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left:"300px"},4000);
+    $("div").animate({fontSize:"60px"},"fast");
+  });
+});
+</script> 
+</head>
+<body>
+<button>Start Animation</button>
+<br /><br />
+<div style="background:#FF0000;height:100px;width:200px;position:relative;color:white">PEERS</div>
+</body>
+</html>

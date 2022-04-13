@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        alert("Text: "+$("#p1").text());
+    });
+	
+	$("#btn2").click(function(){
+        alert("HTML: "+$("#p1").html());
+    });
+	
+	$("#btn3").click(function(){
+        alert("value: "+$("#val").val());
+    });
+	
+	$("#btn4").click(function(){
+        alert($("#attr").attr("href"));
+    });	
+});
+</script>
+</head>
+<body>
+
+<p id="p1">Hi <b>Welcome</b> here!</p>
+<button id="btn1">Text</button>
+<button id="btn2">HTML</button>
+
+<p><input type="text" value="Hi all" id="val"/></p>
+<button id="btn3">Value</button>
+<p><a href="http://www.rediffmail.com" id="attr">Rediffmail</a></p>
+<button id="btn4">Value attribute</button>
+
+
+</body>
+</html>

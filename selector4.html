@@ -1,0 +1,24 @@
+﻿<html>
+<head>
+<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").click(function(){
+    $("li:even").css("background-color","pink");
+	 $("li:odd").css("background-color","green");
+  });
+});
+</script>
+</head>
+<body>
+<button>Click Me</button><br/><br/>
+<ul>
+<li>Hello</li>
+<li>Hello</li>
+<li>Hello</li>
+<li>Hello</li>
+<li>Hello</li>
+</ul>
+</body>
+</html>

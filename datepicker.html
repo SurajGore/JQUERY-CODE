@@ -1,0 +1,31 @@
+<!doctype html>
+ 
+<html>
+<head>
+<style>
+p
+{
+font-family:verdana;
+font-size:22px;
+}
+</style>
+<title>jQuery UI Datepicker </title>
+<link rel="stylesheet" href="jquery-ui.css" />
+<script src="jquery-1.9.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery-ui.js"></script>
+    
+<script>
+$(function() {
+  $("#d").datepicker();
+});
+</script>
+</head>
+<body>
+<form action="RegForm.php"> 
+<p>Date: 
+<input type="text" size="30" name="dob" id="d" /></p>
+<p><input type="submit" value="REGISTER"/></p>
+</form>
+</body>
+</html>

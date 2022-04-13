@@ -1,0 +1,49 @@
+<html>
+<head>
+<style type="text/css"> 
+p
+{
+font-family:verdana;
+font-size:22px;
+}
+
+div.panel
+{
+margin:20px;
+padding:15px;
+text-align:center;
+background:#e5eecc;
+border:solid 5px #c3c3c3;
+height:120px;
+}
+p.flip
+{
+background-color:red;
+width:300px;
+text-align:center;
+border: 2px solid blue;
+color:white
+}
+</style>
+</head>
+<body>
+<div class="panel">
+<p>Because time is valuable, we deliver quick and easy learning.</p>
+<p>At Peers Tech, you can study everything you need to learn, in an accessible and handy format.</p>
+</div>
+<p class="flip">Show/Hide Panel</p>
+
+ <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+$(".flip").click(function(){
+    $(".panel").slideToggle("slow");
+  });
+});
+</script>
+</body>
+</html>
+
+
+

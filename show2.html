@@ -1,0 +1,30 @@
+﻿<html>
+<head>
+<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p:contains('gaurav')").show();
+	
+});
+});
+</script>
+<style>
+.one
+{
+display:none;
+}
+
+</style>
+</head>
+
+<body>
+<button>Click Me</button><br/><br/>
+<p>Hello</p>
+<p class="one">rakesh</p>
+<p class="one">gaurav</p>
+<p class="one">Hello</p>
+<p class="one">Hello</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("div").click(function(){
+    $("p").html($(this).css("background-color"));
+  });
+});
+</script>
+</head>
+<body>
+<div style="width:100px;height:100px;background:red"></div>
+<p style="font-family:verdana;font-size:40px">Click in the red box to return the background color.</p>
+</body>
+</html>

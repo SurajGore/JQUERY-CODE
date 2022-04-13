@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#down").click(function(){
+    $("#one").slideDown(2000);	
+});
+});</script>
+<style>
+#one
+{
+width:200px;
+height:100px;
+background:red;
+display:none;
+} 
+</style>
+</head>
+<body>
+<input type="button" value="slidedown" id="down"/><br/>
+<div id="one"></div>
+
+</body>
+</html>

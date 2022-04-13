@@ -1,0 +1,27 @@
+﻿<html>
+<head>
+<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#slideme").click(function(){
+    $("#one").delay(5000).fadeOut(2000);	
+});
+});
+</script>
+<style>
+#one
+{
+width:200px;
+height:100px;
+background:red;
+}
+</style>
+</head>
+<body>
+<input type="button" value="Fadeout" id="slideme"/>
+<div id="one"></div>
+
+</body>
+</html>

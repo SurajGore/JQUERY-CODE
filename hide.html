@@ -1,0 +1,28 @@
+<html>
+
+<head>
+<style type="text/css">
+p
+{
+font-family:verdana;
+font-size:35px;
+color:yellow;
+background-color:red;
+}
+</style>
+<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide('fast');//4000 milliseconds
+  });
+});
+</script>
+</head>
+<body>
+<button>Hide</button>
+<p>This is a paragraph with little content.</p>
+<p>This is another small paragraph.</p>
+</body>
+</html>
